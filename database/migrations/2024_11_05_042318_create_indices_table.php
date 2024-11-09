@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('indices', function (Blueprint $table) {
             $table->id();
+            $table->string('username');
+            $table->text('judul');
+            $table->text('deskripsi');
+            $table->string('image')->default('kosong');
+            $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
