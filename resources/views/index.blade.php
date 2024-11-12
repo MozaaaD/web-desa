@@ -3,28 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   @vite('resources/css/app.css')
 </head>
-<body>
+<body id="top">
   <!-- Navbar -->
-  <nav class="bg-green-700 h-24 px-20 flex items-center sticky top-0 text-white z-10">
+  <nav class="bg-transparent h-24 px-16 flex items-center fixed top-0 text-white z-10 w-full">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex gap-3 items-center">
         <img src="/logobms.png" class="w-16 h-auto" alt="">
         <div>
-          <p href="#" class="text-sm font-semibold">Desa Tlaga, Kecamatan Gumelar</p>
-          <p href="#" class="text-sm font-semibold -mt-1">Kabupaten Banyumas</p>
-          <p class="text-xs font-bold">Jl. Raya Tlaga No. 06, Desa Tlaga, Kec. Gumelar, Kab. Banyumas, Jawa Tengah, 53165</p>
+          <p style="font-size: 14px; font-weight: 600; line-height: 1.2; margin: 0;">
+            Desa Tlaga, Kecamatan Gumelar
+          </p>
+          <p style="font-size: 14px; font-weight: 600; color: #8f7f21; line-height: 1.2; margin: -2px 0 0 0;">
+            Pemerintah Kabupaten Banyumas
+          </p>
+          <p style="font-size: 12px; font-weight: bold; line-height: 1.2; margin: 0;">
+            Jl. Raya Tlaga No. 06, Desa Tlaga, Kec. Gumelar, Kab. Banyumas, Jawa Tengah, 53165
+          </p>
+        </div>
+        
+      </div>
+      <div class="h-[100svh] flex items-center justify-center gap-3">
+        <a href="#top"
+          class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+          <span>Beranda</span>
+        </a>
+        <a href="#explore"
+          class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+          <span>Tentang</span>
+        </a>
+        <div
+          class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+          <span>Profil</span>
+        </div>
+        <div
+          class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+          <span>Lembaga Desa</span>
+        </div>
+        <div
+          class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+          <span>Potensi Desa</span>
+        </div>
+        <div
+          class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+          <span>Menu Publik</span>
         </div>
       </div>
-      <div class="space-x-3 hidden md:flex">
+      {{-- <div class="space-x-3 hidden md:flex">
         <a href="#" class="">Beranda</a>
         <a href="#explore" class="inline-block relative no-underline after-line">Tentang</a>
         <a href="#services" class="">Profil</a>
         <a href="#contact" class="">Lembaga Desa</a>
         <a href="#contact" class="">Potensi Desa</a>
         <a href="#contact" class="">Menu Publik</a>
-      </div>
+      </div> --}}
       <div class="md:hidden">
         <button class="text-white" id="menu-toggle">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
@@ -33,12 +69,6 @@
         </button>
       </div>
     </div>
-    {{-- <div class="md:hidden mt-4 hidden" id="menu">
-      <a href="#" class="block text-white py-2 px-4 hover:bg-blue-700">Home</a>
-      <a href="#about" class="block text-white py-2 px-4 hover:bg-blue-700">About</a>
-      <a href="#services" class="block text-white py-2 px-4 hover:bg-blue-700">Services</a>
-      <a href="#contact" class="block text-white py-2 px-4 hover:bg-blue-700">Contact</a>
-    </div> --}}
   </nav>
 
   {{-- <h1 class="text-3xl font-bold underline">Hello world!</h1> --}}
@@ -59,26 +89,25 @@
 
   <!-- Section About Desa (optional) -->
   <section id="explore" class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto text-center px-6">
+    <div class="max-w-4xl mx-auto text-center px-6 mt-20">
       <h2 class="text-3xl font-semibold text-gray-800 mb-4">Tentang Desa Tlaga</h2>
       <p class="text-lg text-gray-600 mb-8">
         Tlaga adalah desa di kecamatan Gumelar, Banyumas, Jawa Tengah, Indonesia. Desa ini berjarak sekira 21 Km sebelah barat dari Ajibarang atau 38 Km dari Purwokerto. Desa Tlaga merupakan desa yang berada di perbatasan antara 3 kabupaten yaitu Kabupaten Banyumas, Kabupaten Cilacap dan Kabupaten Brebes. Desa Tlaga merupakan daerah pegunungan sehingga juga merupakan daerah rawan bencana longsor. Mayoritas penduduk di desa ini beragama muslim dan bermata pencaharian petani atau perkebunan, hal ini dapat dilihat dari banyaknya area persawahan dan perkebunan. </p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <!-- Fitur 1 -->
         <div class="bg-green-100 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Grumbul di Desa Tlaga</h3>
-          <p class="text-gray-600">
-            Grumbul Jambenom <br>
-            Grumbul Karang Anyar <br>
-            Grumbul Karang Kemiri <br>
-            Grumbul Legok <br>
-            Grumbul Sompok <br>
-            Grumbul Sumber <br>
-            Grumbul Tipar <br>
-            Grumbul Tlaga          </p>
+          <h3 class="text-xl text-center font-semibold text-gray-800 mb-2">Grumbul di Desa Tlaga</h3>
+          <pre class=" font-poppins text-gray-600 text-center">
+Grumbul Jambenom
+Grumbul Karang Anyar
+Grumbul Karang Kemiri
+Grumbul Legok
+Grumbul Sompok
+Grumbul Sumber
+Grumbul Tipar
+Grumbul Tlaga</pre>
         </div>
         <!-- Fitur 2 -->
-        <div class="bg-green-100 p-6 rounded-lg shadow-lg">
+        {{-- <div class="bg-green-100 p-6 rounded-lg shadow-lg">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">Budaya & Tradisi</h3>
           <p class="text-gray-600">
             Nikmati budaya dan tradisi khas Desa Tlaga yang masih dijaga oleh masyarakat setempat, seperti upacara adat dan kesenian lokal.
@@ -90,7 +119,7 @@
           <p class="text-gray-600">
             Dikenal dengan kerajinan tangan khas, Desa Tlaga memproduksi berbagai macam produk lokal yang memiliki nilai seni tinggi.
           </p>
-        </div>
+        </div> --}}
       </div>
     </div>
   </section>
@@ -107,23 +136,25 @@
       </div>
     </div>
   </section> --}}
+  <h3 class="text-5xl text-center font-semibold my-10">Halaman Berita</h3>
 
+  <div class="flex justify-center">
+    @foreach ($posts as $item) 
   <div class="max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-gray-400 mt-7">
     <div class="relative">
-      <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHx1c2VyfGVufDB8MHx8fDE2OTQwOTU5Nzl8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile Image">
+      <img class="w-full h-48 object-cover" src="/storage/{{$item->image}}" alt="Profile Image">
     </div>
     <div class="px-6 py-4">
-      <div class="text-xl font-semibold text-gray-800">John Doe</div>
-      <p class="text-gray-600">Front-end Developer</p>
+      <div class="text-xl font-semibold text-gray-800">{{$item->judul}}</div>
+      <p class="text-gray-600">{{$item->deskripsi}}</p>
+      <p>Di posting oleh {{$item->username}}</p>
+      <p class="text-sm text-gray-500"> {{ \Carbon\Carbon::now()->locale('id')->isoFormat('dddd, D MMMM Y') }}</p>
     </div>
     <div class="px-6 py-4">
-      <span class="inline-block px-2 py-1 font-semibold text-teal-900 bg-teal-200 rounded-full">Web</span>
-      <span class="inline-block px-2 py-1 font-semibold text-indigo-900 bg-indigo-200 rounded-full">UI/UX</span>
-      <span class="inline-block px-2 py-1 font-semibold text-purple-900 bg-purple-200 rounded-full">Design</span>
+      <a href="#" class="text-blue-500 hover:underline">Lihat Berita</a>
     </div>
-    <div class="px-6 py-4">
-      <a href="#" class="text-blue-500 hover:underline">View Profile</a>
-    </div>
+  </div>
+  @endforeach
   </div>
 
   <footer class="bg-gray-200 py-8 px-4 shadow-md z-10 flex justify-center items-center dark:bg-slate-900 dark:text-white mt-5">
@@ -133,25 +164,23 @@
   </footer>  
 
   <script>
-    const navbar = document.querySelector('nav');
-  
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add('bg-gray-400');
-        navbar.classList.add('shadow-lg');
-        navbar.classList.remove('text-white');
-        navbar.classList.add('text-black');
+const navbar = document.querySelector('nav');
 
-        navbar.classList.remove('bg-green-700');
-      } else {
-        navbar.classList.add('bg-green-700');
-        navbar.classList.add('shadow-lg');
-        navbar.classList.add('text-white');
-        navbar.classList.remove('text-black');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add('bg-white');
+    navbar.classList.add('text-black');
+    navbar.classList.remove('bg-transparent');
+    navbar.classList.remove('text-white');
+  } else {
+    navbar.classList.add('bg-transparent');
+    navbar.classList.add('text-white');
+    navbar.classList.remove('bg-white');
+    navbar.classList.remove('text-black');
+  }
+});
 
-        navbar.classList.remove('bg-gray-400');
-      }
-    });
+
   </script>
   
 </body>

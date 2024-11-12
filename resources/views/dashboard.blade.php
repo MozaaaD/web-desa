@@ -22,7 +22,9 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             @foreach ($posts as $item)
             <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200">
-                <p class="text-sm text-gray-500">{{ \Carbon\Carbon::now()->locale('id')->isoFormat('dddd, D MMMM Y') }}</p>
+                <img src="/storage/{{$item->image}}" alt="">
+                <p class="text-sm text-gray-500">Diposting oleh {{$item->username}}</p> 
+                    <p class="text-sm text-gray-500"> {{ \Carbon\Carbon::now()->locale('id')->isoFormat('dddd, D MMMM Y') }}</p>
                 <h2 class="text-lg font-semibold text-gray-800 mt-2 mb-2 line-clamp-1">
                     {{ $item->judul }}
                 </h2>
@@ -37,7 +39,7 @@
             <!-- Konfirmasi Hapus Modal -->
             <dialog id="hapus-{{ $item->id }}" class="modal modal-bottom sm:modal-middle">
                 <div class="modal-box bg-white rounded-lg p-8 shadow-lg">
-                    <h3 class="text-lg font-bold text-gray-800 mb-4">Yakin mau hapus</h3>
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">Apakah anda yakin ingin menghapus?</h3>
                     <p class="text-gray-600 mb-6">Anda akan menghapus postingan ini secara permanen, Anda yakin?</p>
                     <div class="modal-action">
                         <form method="dialog">

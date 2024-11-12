@@ -11,6 +11,10 @@ class IndexController extends Controller
 {
     public function index(){
         $posts = Index::all();
+        return view('index', compact('posts'));
+    }
+    public function dashboard(){
+        $posts = Index::all();
         return view('dashboard', compact('posts'));
     }
 

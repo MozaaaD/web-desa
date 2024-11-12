@@ -23,6 +23,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/index', [IndexController::class, 'index'])->name('index');
+Route::get('/dashboard', [IndexController::class, 'dashboard'])->name('dashboard');
 Route::get('/add', [IndexController::class, 'add'])->name('add');
 Route::post('/tambah', [IndexController::class, 'tambah'])->name('tambah');
 
