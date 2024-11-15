@@ -28,39 +28,72 @@
         
       </div>
       <div class="h-[100svh] flex items-center justify-center gap-3">
+        <!-- Link Beranda -->
         <a href="#top"
-          class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+           class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
           <span>Beranda</span>
         </a>
-        <a href="#explore"
-          class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
-          <span>Tentang</span>
+        <a href="#berita"
+           class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+          <span>Berita</span>
         </a>
-        <div
-          class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
-          <span>Profil</span>
+      
+        <!-- Dropdown Profil -->
+        <div class="relative">
+          <div class="group">
+            <div class="hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+              <span class="group-hover:text-yellow-400">Profil</span>
+            </div>
+            <!-- Dropdown Menu -->
+            <div class="group absolute left-1/2 -translate-x-1/2 w-40 mt-[0.5px] bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform transition-all duration-300 ease-in-out translate-y-2 z-10 pointer-events-none group-hover:pointer-events-auto">
+              <a href="/visimisi" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white hover:rounded-t-md transition-colors text-center">Visi dan Misi</a>
+              <a href="#sejarah" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">Wilayah Desa</a>
+              <a href="#visi-misi" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">Sejarah Desa</a>
+              <a href="#visi-misi" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white hover:rounded-b-md  transition-colors text-center">Tokoh & Sejarah</a>
+            </div>
+          </div>
         </div>
-        <div
-          class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
-          <span>Lembaga Desa</span>
+        
+        <div class="relative">
+          <div class="group">
+            <div class="hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+              <span class="group-hover:text-yellow-400">Lembaga Desa</span>
+            </div>
+            <!-- Dropdown Menu -->
+            <div class="absolute left-1/2 -translate-x-1/2 w-40 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform transition-all duration-300 ease-in-out translate-y-2 z-10 pointer-events-none group-hover:pointer-events-auto">
+              <a href="#struktur" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">Pemerintah Desa</a>
+              <a href="#sejarah" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors">Linmas</a>
+              <a href="#visi-misi" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors">BPD</a>
+            </div>
+          </div>
         </div>
-        <div
-          class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
-          <span>Potensi Desa</span>
+        <div class="relative">
+          <div class="group">
+            <div class="hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+              <span class="group-hover:text-yellow-400">Potensi Desa</span>
+            </div>
+            <!-- Dropdown Menu -->
+            <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform transition-all duration-300 ease-in-out translate-y-2 z-10 pointer-events-none group-hover:pointer-events-auto">
+              <a href="#struktur" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">Struktur</a>
+              <a href="#sejarah" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors">Sejarah</a>
+              <a href="#visi-misi" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors">Visi & Misi</a>
+            </div>
+          </div>
         </div>
-        <div
-          class="relative hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
-          <span>Menu Publik</span>
+        <div class="relative">
+          <div class="group">
+            <div class="hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+              <span class="group-hover:text-yellow-400">Menu Publik</span>
+            </div>
+            <!-- Dropdown Menu -->
+            <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform transition-all duration-300 ease-in-out translate-y-2 z-10 pointer-events-none group-hover:pointer-events-auto">
+              <a href="#struktur" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">Struktur</a>
+              <a href="#sejarah" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors">Sejarah</a>
+              <a href="#visi-misi" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors">Visi & Misi</a>
+            </div>
+          </div>
         </div>
-      </div>
-      {{-- <div class="space-x-3 hidden md:flex">
-        <a href="#" class="">Beranda</a>
-        <a href="#explore" class="inline-block relative no-underline after-line">Tentang</a>
-        <a href="#services" class="">Profil</a>
-        <a href="#contact" class="">Lembaga Desa</a>
-        <a href="#contact" class="">Potensi Desa</a>
-        <a href="#contact" class="">Menu Publik</a>
-      </div> --}}
+            </div>
       <div class="md:hidden">
         <button class="text-white" id="menu-toggle">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
@@ -70,8 +103,6 @@
       </div>
     </div>
   </nav>
-
-  {{-- <h1 class="text-3xl font-bold underline">Hello world!</h1> --}}
 
   <section class="min-h-screen flex items-center justify-center bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply" style="background-image: url('tlaga.jpg');  background-size: 100% 100%; ">
     <div class="text-center px-6 md:px-12">
@@ -88,7 +119,7 @@
   </section>
 
   <!-- Section About Desa (optional) -->
-  <section id="explore" class="py-16 bg-white">
+  <section id="explore"class="py-16 bg-white">
     <div class="max-w-4xl mx-auto text-center px-6 mt-20">
       <h2 class="text-3xl font-semibold text-gray-800 mb-4">Tentang Desa Tlaga</h2>
       <p class="text-lg text-gray-600 mb-8">
@@ -106,37 +137,11 @@ Grumbul Sumber
 Grumbul Tipar
 Grumbul Tlaga</pre>
         </div>
-        <!-- Fitur 2 -->
-        {{-- <div class="bg-green-100 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Budaya & Tradisi</h3>
-          <p class="text-gray-600">
-            Nikmati budaya dan tradisi khas Desa Tlaga yang masih dijaga oleh masyarakat setempat, seperti upacara adat dan kesenian lokal.
-          </p>
-        </div>
-        <!-- Fitur 3 -->
-        <div class="bg-green-100 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Kerajinan Tangan</h3>
-          <p class="text-gray-600">
-            Dikenal dengan kerajinan tangan khas, Desa Tlaga memproduksi berbagai macam produk lokal yang memiliki nilai seni tinggi.
-          </p>
-        </div> --}}
       </div>
     </div>
   </section>
 
-  <!-- Section Contact / Call to Action -->
-  {{-- <section class="py-16 bg-green-800 text-white">
-    <div class="max-w-4xl mx-auto text-center px-6">
-      <h2 class="text-3xl font-semibold mb-4">Hubungi Kami</h2>
-      <p class="text-lg mb-8">
-        Ingin tahu lebih banyak tentang Desa Tlaga? Hubungi kami atau kunjungi langsung untuk merasakan kehangatan masyarakat kami.
-      </p>
-      <div>
-        <a href="mailto:info@desatlaga.com" class="inline-block bg-yellow-400 text-green-800 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition duration-200">Kirim Pesan</a>
-      </div>
-    </div>
-  </section> --}}
-  <h3 class="text-5xl text-center font-semibold my-10">Halaman Berita</h3>
+  <h3 id="berita" class="text-5xl text-center font-semibold my-10">Halaman Berita</h3>
 
   <div class="flex justify-center">
     @foreach ($posts as $item) 

@@ -17,6 +17,10 @@ class IndexController extends Controller
         $posts = Index::all();
         return view('dashboard', compact('posts'));
     }
+    public function visimisi(){
+        $posts = Index::all();
+        return view('visimisi', compact('posts'));
+    }
 
     public function add(){
         return view('add');
