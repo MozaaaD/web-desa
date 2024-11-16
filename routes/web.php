@@ -24,6 +24,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/', [IndexController::class, 'index'])->name('index');
 Route::get('/visimisi', [IndexController::class, 'visimisi'])->name('visimisi');
+Route::get('/pemerintahdesa', [IndexController::class, 'pemerintahdesa'])->name('pemerintahdesa');
 // Route::get('/dashboard', [IndexController::class, 'dashboard'])->name('dashboard');
 Route::get('/add', [IndexController::class, 'add'])->name('add');
 Route::post('/tambah', [IndexController::class, 'tambah'])->name('tambah');

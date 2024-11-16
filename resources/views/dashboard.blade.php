@@ -43,12 +43,12 @@
                     <p class="text-gray-600 mb-6">Anda akan menghapus postingan ini secara permanen, Anda yakin?</p>
                     <div class="modal-action">
                         <form method="dialog">
-                            <button class="bg-gray-300 text-gray-700 px-6 py-2 rounded-full">Gajadi deh</button>
+                            <button class="bg-gray-300 text-gray-700 px-6 py-2 rounded-full">Batal</button>
                         </form>
                         <form action="{{ route('postingan.destroy', $item->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600">Tentu</button>
+                            <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600">Hapus</button>
                         </form>
                     </div>
                 </div>
