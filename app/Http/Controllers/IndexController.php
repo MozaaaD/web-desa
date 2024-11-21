@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Index;
+use App\Models\Berita;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
@@ -10,60 +11,43 @@ use Illuminate\Support\Facades\Storage;
 class IndexController extends Controller
 {
     public function index(){
-        $posts = Index::all();
+        $posts = Berita::latest()->limit(3)->get();
         return view('index', compact('posts'));
     }
-    public function dashboard(){
+    public function berita(){
         $posts = Index::all();
+        return view('berita', compact('posts'));
+    }
+    public function dashboard(){
+        $posts = Berita::all();
         return view('dashboard', compact('posts'));
     }
     public function visimisi(){
         $posts = Index::all();
         return view('visimisi', compact('posts'));
     }
+    public function sejarahdesa(){
+        $posts = Index::all();
+        return view('sejarahdesa', compact('posts'));
+    }
     public function pemerintahdesa(){
         $posts = Index::all();
         return view('pemerintahdesa', compact('posts'));
     }
-
-    public function add(){
-        return view('add');
+    public function bpd(){
+        $posts = Index::all();
+        return view('bpd', compact('posts'));
     }
-
-    public function tambah(Request $request){
-        $request->validate([
-            'username'=>('required'),
-            'judul'=>('required'),
-            'deskripsi'=>('required'),
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048' 
-        ]);   
-        $imagePath = 'kosong';
-        if ($request->file('image')) {
-            $imagePath = $request->file('image')->store('diskusis', 'public');
-        }
-            Index::create([
-                'user_id'=> Auth::id(),
-                'username' => $request->username,
-                'judul' => $request->judul,
-                'deskripsi' => $request->deskripsi,
-                'image' => $imagePath
-            ]);
-            return redirect()->route('dashboard');
+    public function lpmd(){
+        $posts = Index::all();
+        return view('lpmd', compact('posts'));
     }
-
-    public function destroy($id)
-    {
-
-        $diskusi = Index::findOrFail($id);
-        if (Auth::id() === $diskusi->user_id) {
-            if ($diskusi->image) {
-                Storage::delete('public/' . $diskusi->image);
-            }
-            $diskusi->delete();
-            return redirect()->route('dashboard');
-        } else {
-            return redirect()->route('dashboard');
-        }
-
-    }    
+    public function karangtaruna(){
+        $posts = Index::all();
+        return view('karangtaruna', compact('posts'));
+    }
+    public function rtrw(){
+        $posts = Index::all();
+        return view('rtrw', compact('posts'));
+    }
 }

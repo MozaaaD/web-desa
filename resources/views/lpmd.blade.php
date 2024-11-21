@@ -8,10 +8,10 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
-    <title>Pemerintah Desa</title>
+    <title>LPMD</title>
 </head>
 <body>
-    <nav class="bg-white h-24 px-16 flex items-center fixed top-0 text-black z-10 w-full">
+    <nav class="bg-white h-24 px-16 flex items-center text-black z-10 w-full">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex gap-3 items-center">
                 <img src="/logobms.png" class="w-16 h-auto" alt="">
@@ -55,13 +55,13 @@
                 </div>
                 <!-- Dropdown Menu -->
                 <div class="absolute left-1/2 -translate-x-1/2 w-40 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform transition-all duration-300 ease-in-out translate-y-2 z-10 pointer-events-none group-hover:pointer-events-auto">
-                    <a href="/pemerintahdesa" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white hover:rounded-t-md transition-colors text-center">Pemerintah Desa</a>
-                    {{-- <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">Linmas</a> --}}
-                    <a href="/bpd" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">BPD</a>
-                    <a href="/lpmd" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">LPMD</a>
-                    <a href="/karangtaruna" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">Karang Taruna</a>
-                    <a href="/rtrw" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white hover:rounded-b-md  transition-colors text-center">Daftar RT/RW</a>
-                  </div>
+                  <a href="/pemerintahdesa" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white hover:rounded-t-md transition-colors text-center">Pemerintah Desa</a>
+                  {{-- <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">Linmas</a> --}}
+                  <a href="/bpd" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">BPD</a>
+                  <a href="/lpmd" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">LPMD</a>
+                  <a href="/karangtaruna" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">Karang Taruna</a>
+                  <a href="/rtrw" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white hover:rounded-b-md  transition-colors text-center">Daftar RT/RW</a>
+                </div>
               </div>
               <div class="relative group">
                 <div class="hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
@@ -78,77 +78,16 @@
         </div>
     </nav>
 
-    <div class="container mx-auto py-12 px-6 mt-20">
-        <h2 class="text-3xl font-bold text-yellow-600 mb-4">Pemerintah Desa</h2>
+    <div class="container mx-auto py-12 px-6 mt-5">
+        <h2 class="text-3xl font-bold text-yellow-600 mb-4">LPMD</h2>
         <p class="text-lg text-gray-600 leading-relaxed mb-6 pl-8 border-l-4 border-yellow-600">
-            Pemerintah desa adalah unit pemerintahan terkecil dalam struktur administratif di Indonesia. Tugas utama dari pemerintah desa adalah melayani dan memberdayakan masyarakat desa, mengelola sumber daya lokal, dan menerapkan kebijakan-kebijakan yang sesuai dengan kebutuhan dan aspirasi warga desa. Pemerintah desa memiliki peran penting dalam pengembangan desa, termasuk dalam hal pembangunan infrastruktur, kesehatan, pendidikan, dan pemberdayaan ekonomi masyarakat.
+          Lembaga Pemberdayaan Masyarakat Desa (LPMD) ialah sebuah organisasi yang dibentuk di tingkat desa dengan tujuan utama untuk membantu pemerintahan desa dalam merencanakan, melaksanakan, dan mengawasi program-program pembangunan desa serta pemberdayaan masyarakat. LPMD di Desa Tlaga berperan sebagai mitra strategis pemerintah desa dalam upaya meningkatkan kesejahteraan masyarakat melalui partisipasi aktif dalam berbagai kegiatan pembangunan.
+          <br>
+          <br>
+          Komposisi LPMD biasanya terdiri dari tokoh-tokoh masyarakat yang dianggap mampu dan memiliki dedikasi tinggi terhadap pembangunan desa, termasuk perwakilan dari berbagai kelompok masyarakat. LPMD diharapkan dapat menjadi penggerak utama dalam menciptakan pembangunan desa yang berkelanjutan dan berkeadilan.
         </p>
     </div>
 
-    <!-- STRUKTUR PEMERINTAHAN DESA -->
-    <div class="container mx-auto py-10">
-        <h2 class="text-2xl font-semibold text-center mb-10">Struktur Pemerintah Desa</h2>
-        <div class="flex flex-col items-center space-y-8">
-            <!-- Kepala Desa -->
-            <div class="text-center">
-                <div class="bg-gray-800 text-white px-6 py-3 rounded-t-md font-bold">Kepala Desa</div>
-                <div class="bg-gray-600 text-white px-6 py-2 rounded-b-md">Riswoto, S.Pd.I</div>
-            </div>
-            <!-- Garis -->
-            <div class="h-10 w-1 bg-gray-800"></div>
-            <!-- Sekretaris Desa -->
-            <div class="text-center">
-                <div class="bg-gray-800 text-white px-6 py-3 rounded-t-md font-bold">Sekretaris Desa</div>
-                <div class="bg-gray-600 text-white px-6 py-2 rounded-b-md">Sukismo</div>
-            </div>
-            <!-- Garis -->
-            <div class="h-10 w-1 bg-gray-800"></div>
-            <!-- KAUR -->
-            <div class="grid grid-cols-3 gap-6">
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">KAUR TU & Umum</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Barokah Romadhon</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">KAUR Keuangan</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Tri Nurhayati</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">KAUR Perencanaan</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Nia Nifrida</div>
-                </div>
-            </div>
-            <!-- Garis -->
-            <div class="h-10 w-1 bg-gray-800 mt-6"></div>
-            <!-- Kepala Seksi -->
-            <div class="grid grid-cols-4 gap-6 mt-6">
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">Kepala Seksi Pemerintahan</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Sukirno</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">Kepala Seksi Kesejahteraan</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">-</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">Kepala Seksi Pelayanan</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Kuat Waluyo</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">Kepala Dusun I</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Johan Iswahyudi</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">Kepala Dusun II</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Samingun</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">Kepala Dusun III</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Dismo Budhianto</div>
-                </div>
-            </div>
-        </div>
-    </div>
     
     
     <footer class="bg-gray-200 py-8 px-4 shadow-md z-10 flex justify-center items-center dark:bg-slate-900 dark:text-white mt-5">

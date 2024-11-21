@@ -8,7 +8,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
-    <title>Pemerintah Desa</title>
+    <title>Visi Misi</title>
 </head>
 <body>
     <nav class="bg-white h-24 px-16 flex items-center fixed top-0 text-black z-10 w-full">
@@ -55,13 +55,13 @@
                 </div>
                 <!-- Dropdown Menu -->
                 <div class="absolute left-1/2 -translate-x-1/2 w-40 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform transition-all duration-300 ease-in-out translate-y-2 z-10 pointer-events-none group-hover:pointer-events-auto">
-                    <a href="/pemerintahdesa" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white hover:rounded-t-md transition-colors text-center">Pemerintah Desa</a>
-                    {{-- <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">Linmas</a> --}}
-                    <a href="/bpd" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">BPD</a>
-                    <a href="/lpmd" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">LPMD</a>
-                    <a href="/karangtaruna" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">Karang Taruna</a>
-                    <a href="/rtrw" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white hover:rounded-b-md  transition-colors text-center">Daftar RT/RW</a>
-                  </div>
+                  <a href="/pemerintahdesa" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white hover:rounded-t-md transition-colors text-center">Pemerintah Desa</a>
+                  {{-- <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">Linmas</a> --}}
+                  <a href="/bpd" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">BPD</a>
+                  <a href="/lpmd" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">LPMD</a>
+                  <a href="/karangtaruna" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white transition-colors text-center">Karang Taruna</a>
+                  <a href="/rtrw" class="block px-4 py-2 text-gray-700 hover:bg-yellow-400 hover:text-white hover:rounded-b-md  transition-colors text-center">Daftar RT/RW</a>
+                </div>
               </div>
               <div class="relative group">
                 <div class="hover:text-yellow-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-yellow-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-yellow-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
@@ -78,78 +78,29 @@
         </div>
     </nav>
 
-    <div class="container mx-auto py-12 px-6 mt-20">
-        <h2 class="text-3xl font-bold text-yellow-600 mb-4">Pemerintah Desa</h2>
-        <p class="text-lg text-gray-600 leading-relaxed mb-6 pl-8 border-l-4 border-yellow-600">
-            Pemerintah desa adalah unit pemerintahan terkecil dalam struktur administratif di Indonesia. Tugas utama dari pemerintah desa adalah melayani dan memberdayakan masyarakat desa, mengelola sumber daya lokal, dan menerapkan kebijakan-kebijakan yang sesuai dengan kebutuhan dan aspirasi warga desa. Pemerintah desa memiliki peran penting dalam pengembangan desa, termasuk dalam hal pembangunan infrastruktur, kesehatan, pendidikan, dan pemberdayaan ekonomi masyarakat.
-        </p>
-    </div>
-
-    <!-- STRUKTUR PEMERINTAHAN DESA -->
-    <div class="container mx-auto py-10">
-        <h2 class="text-2xl font-semibold text-center mb-10">Struktur Pemerintah Desa</h2>
-        <div class="flex flex-col items-center space-y-8">
-            <!-- Kepala Desa -->
-            <div class="text-center">
-                <div class="bg-gray-800 text-white px-6 py-3 rounded-t-md font-bold">Kepala Desa</div>
-                <div class="bg-gray-600 text-white px-6 py-2 rounded-b-md">Riswoto, S.Pd.I</div>
+    <div class="container mx-auto mt-[100px] px-6">
+        <div class="bg-white p-8 rounded-xl shadow-lg w-full mx-auto mb-12 border border-gray-200">
+            <h2 class="text-5xl font-semibold text-yellow-600 mb-6 text-center">Sejarah Desa Tlaga</h2>
+            <div class="flex justify-center mb-6">
+                <img src="sejarahdesa.jpg" alt="Sejarah Desa Tlaga" class="rounded-lg shadow-lg w-full max-w-3xl">
             </div>
-            <!-- Garis -->
-            <div class="h-10 w-1 bg-gray-800"></div>
-            <!-- Sekretaris Desa -->
-            <div class="text-center">
-                <div class="bg-gray-800 text-white px-6 py-3 rounded-t-md font-bold">Sekretaris Desa</div>
-                <div class="bg-gray-600 text-white px-6 py-2 rounded-b-md">Sukismo</div>
-            </div>
-            <!-- Garis -->
-            <div class="h-10 w-1 bg-gray-800"></div>
-            <!-- KAUR -->
-            <div class="grid grid-cols-3 gap-6">
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">KAUR TU & Umum</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Barokah Romadhon</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">KAUR Keuangan</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Tri Nurhayati</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">KAUR Perencanaan</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Nia Nifrida</div>
-                </div>
-            </div>
-            <!-- Garis -->
-            <div class="h-10 w-1 bg-gray-800 mt-6"></div>
-            <!-- Kepala Seksi -->
-            <div class="grid grid-cols-4 gap-6 mt-6">
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">Kepala Seksi Pemerintahan</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Sukirno</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">Kepala Seksi Kesejahteraan</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">-</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">Kepala Seksi Pelayanan</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Kuat Waluyo</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">Kepala Dusun I</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Johan Iswahyudi</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">Kepala Dusun II</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Samingun</div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-gray-800 text-white px-4 py-2 rounded-t-md font-bold">Kepala Dusun III</div>
-                    <div class="bg-gray-600 text-white px-4 py-2 rounded-b-md">Dismo Budhianto</div>
-                </div>
-            </div>
+            <p class="text-lg text-gray-800 leading-relaxed mb-6">
+                Lahirnya Desa Tlaga tidak lepas dari eksistensi Lengger di Banyumas. Seni lengger atau ronggeng merupakan bagian integral dari sejarah seni budaya Banyumas, termasuk di Desa Tlaga, Kecamatan Gumelar. Kesenian lengger menjadi tontonan wajib dalam setiap kegiatan di Desa Tlaga, sementara kesenian lain hanya bersifat sunah. Menurut warga desa, seni lengger pertama kali diperkenalkan di Tlaga oleh Eyang Ajeng, adik dari Eyang Ranukertawijaya, yang merupakan penari lengger pertama di desa tersebut. Eyang Ajeng datang setelah Eyang Rebo meninggalkan Selogiri, sementara dua teman Eyang Rebo pindah ke Karangdelima (sekarang Desa Petahunan, Kecamatan Pekuncen, Banyumas).
+            </p>
+            <p class="text-lg text-gray-800 leading-relaxed mb-6">
+                Eyang Ajeng dikenal luas dan sering diundang tampil, bahkan sampai ke Pegadungan, Sunda. Konon, setelah tampil, Eyang Ajeng diberi hadiah berupa pakaian harimau oleh seseorang. Ketika mengenakan pakaian tersebut, Eyang Ajeng dipercaya bisa berubah menjadi harimau. Orang setempat percaya bahwa pemberi pakaian tersebut adalah bangsa "mejajaran", makhluk yang mirip manusia tapi bukan manusia. Menurut kepercayaan, mejajaran adalah makhluk tanpa tungkai kaki dan lekukan di bawah hidung seperti manusia. Hingga kini, bekas tapak kaki mereka masih terlihat di hutan-hutan dan perbukitan di Banyumas bagian barat.
+            </p>
+            <p class="text-lg text-gray-800 leading-relaxed mb-6">
+                Terlepas dari mitologi tersebut, seni budaya lokal di Tlaga masih bertahan hingga sekarang. Seni lengger diwariskan turun-temurun dalam keluarga dan eksistensinya berkaitan dengan kisah Eyang Ajeng sebagai lengger pertama di Tlaga. Seni lengger di Tlaga masih sering diundang oleh masyarakat Cilacap dan Brebes. Dalam slametan suran, pentas lengger adalah hal yang wajib sebagai penghormatan kepada Eyang Ranukertawijaya dan Eyang Ajeng. Kepercayaan terhadap laknat dan prahara karena melupakan hal gaib menjaga kelestarian budaya dan tradisi setempat.
+            </p>
+            <p class="text-lg text-gray-800 leading-relaxed mb-6">
+                Sebagai masyarakat agraris, masyarakat Tlaga juga memiliki kesenian bentha-benthi atau rinding, upacara meminta hujan yang dipentaskan saat kemarau panjang. Penyembelihan kerbau di awal Sura juga tradisi turun-temurun dengan makna simbolis. Penanaman kepala kerbau sebagai simbol penguburan sifat serakah manusia agar akal dan nurani tetap terjaga, serta penguburan tulang belulang sebagai nasihat agar tidak suka berebut sesuatu yang tidak berharga.
+            </p>
+            <p class="text-lg text-gray-800 leading-relaxed">
+                Prosesi Suran di Tlaga dilaksanakan pada hari Jum’at Kliwon di dekat masjid, mendekatkan masyarakat dengan tempat dan waktu ibadat. Suran menjadi upaya mendekatkan masyarakat dengan Islam melalui pendekatan budaya, mengakomodasi berbagai kesenian yang ada. Dengan demikian, agama dapat disisipkan dalam kehidupan masyarakat melalui simbolisasi dalam pentas, syair, bahasa, tembang, dan ritual Suran. Ritus Suran menjadi upaya untuk menyelaraskan hubungan manusia dengan manusia, dan manusia dengan semesta, berpusat pada Tuhan Sang Hyang Tunggal.
+            </p>
         </div>
     </div>
-    
     
     <footer class="bg-gray-200 py-8 px-4 shadow-md z-10 flex justify-center items-center dark:bg-slate-900 dark:text-white mt-5">
         <div class="text-sm text-gray-600 dark:text-gray-300 text-center">

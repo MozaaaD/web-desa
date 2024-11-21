@@ -22,16 +22,17 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             @foreach ($posts as $item)
             <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200">
-                <img src="/storage/{{$item->image}}" alt="">
+                <img src="/storage/{{$item->image}}" alt="" class="h-36 w-96 object-cover">
                 <p class="text-sm text-gray-500">Diposting oleh {{$item->username}}</p> 
-                    <p class="text-sm text-gray-500"> {{ \Carbon\Carbon::now()->locale('id')->isoFormat('dddd, D MMMM Y') }}</p>
+                    <p class="text-sm text-gray-500"> {{ \Carbon\Carbon::parse($item->created_at)->locale('id')->isoFormat('dddd, D MMMM Y') }}</p>
                 <h2 class="text-lg font-semibold text-gray-800 mt-2 mb-2 line-clamp-1">
                     {{ $item->judul }}
                 </h2>
                 <p class="text-gray-600 mb-4 line-clamp-2">{{ $item->deskripsi }}</p>
 
                 <div class="flex justify-between">
-                    <a href="/postingan/{{ $item->id }}" class="text-blue-600 hover:underline">Edit</a>
+                    <a href="/edit/{{ $item->id }}" class="text-blue-600 hover:underline">Edit</a>
+                    <a href="/detail/{{ $item->id }}" class="text-blue-500 hover:underline">Lihat Berita</a>
                     <button class="text-red-500" onclick="document.getElementById('hapus-{{ $item->id }}').showModal()">Hapus</button>
                 </div>
             </div>

@@ -17,7 +17,7 @@
     
             <!-- gambar -->
             <div class="mt-4">
-                <x-input-label for="image" :value="__('Tambahkan Gambar (Optional)')" />
+                <x-input-label for="image" :value="__('Tambahkan Gambar')" />
                 <x-text-input id="image" class="file-input file-input-bordered w-full max-w-xs" type="file" name="image" autocomplete="image" />
             </div>
     
