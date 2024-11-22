@@ -20,10 +20,10 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [BeritaController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [BeritaController::class, 'destroy'])->name('profile.destroy');
     Route::get('/dashboard', [IndexController::class, 'dashboard'])->name('dashboard');
-    Route::get('/berita', [IndexController::class, 'berita'])->name('berita');
     Route::delete('/postingan/{id}', [BeritaController::class, 'destroy'])->name('postingan.destroy');
 });
 
+Route::get('/berita', [IndexController::class, 'berita'])->name('berita');
 Route::get('/', [IndexController::class, 'index'])->name('index');
 Route::get('/visimisi', [IndexController::class, 'visimisi'])->name('visimisi');
 Route::get('/sejarahdesa', [IndexController::class, 'sejarahdesa'])->name('sejarahdesa');
@@ -32,6 +32,9 @@ Route::get('/bpd', [IndexController::class, 'bpd'])->name('bpd');
 Route::get('/lpmd', [IndexController::class, 'lpmd'])->name('lpmd');
 Route::get('/karangtaruna', [IndexController::class, 'karangtaruna'])->name('karangtaruna');
 Route::get('/rtrw', [IndexController::class, 'rtrw'])->name('rtrw');
+Route::get('/produkdesa', [IndexController::class, 'produkdesa'])->name('produkdesa');
+Route::get('/potensiwisata', [IndexController::class, 'potensiwisata'])->name('potensiwisata');
+// Route::get('/berita1', [IndexController::class, 'berita1'])->name('berita1');
 // Route::get('/dashboard', [IndexController::class, 'dashboard'])->name('dashboard');
 Route::get('/add', [BeritaController::class, 'add'])->name('add');
 Route::get('/edit/{id}', [BeritaController::class, 'edit'])->name('edit');

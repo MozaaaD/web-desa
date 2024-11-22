@@ -8,7 +8,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
-    <title>Detail</title>
+    <title>Berita</title>
 </head>
 <body>
     <section id="berita"> 
@@ -31,13 +31,11 @@
                       <a href="/detail/{{ $item->id }}" class="text-sm font-medium text-blue-600 hover:text-blue-500 transition-colors">Lihat Berita →</a>
                   </div>
               </div>
+              
               @endforeach
-       
-          </div>
+            </div>
         </div>
-        <a href="/berita" class="flex justify-center w-15 mt-5 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">
-          Lihat Selengkapnya
-      </a>
+ 
      </section>
 </body>
 </html>

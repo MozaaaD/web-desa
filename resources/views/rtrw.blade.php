@@ -78,8 +78,8 @@
         </div>
     </nav>
 
-    <div class="container mx-auto py-12 px-6 mt-5">
-        <h2 class="text-3xl font-bold text-yellow-600 mb-4">RT & RW</h2>
+    <div class="container mx-auto py-3 px-6 mt-5">
+        <h2 class="text-3xl font-bold text-yellow-600 mb-4 text-center">RT & RW</h2>
         {{-- <p class="text-lg text-gray-600 leading-relaxed mb-6 pl-8 border-l-4 border-yellow-600">
           Karang Taruna adalah organisasi kepemudaan di tingkat desa yang bertujuan untuk mengembangkan potensi pemuda dan pemudi dalam rangka meningkatkan kesejahteraan sosial masyarakat. Karang Taruna Desa Tlaga bergerak di bidang sosial, budaya, ekonomi, dan lingkungan, serta berfungsi sebagai wadah pengembangan generasi muda agar dapat berperan aktif dalam pembangunan masyarakat.
         </p> --}}
@@ -92,42 +92,45 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
       <!-- Baris pertama (RW 1 - RW 4) -->
       <div class="bg-white border border-gray-300 rounded-lg shadow-md w-full flex flex-col justify-center items-center">
-          <h3 class="text-xl font-semibold text-center py-4">RW 001</h3>
-          <table class="min-w-full text-sm">
-              <thead class="bg-gray-100">
-                  <tr class="text-center">
-                      <th class="px-4 py-2">No</th>
-                      <th class="px-4 py-2">RT</th>
-                      <th class="px-4 py-2">Jumlah Penduduk</th>
-                  </tr>
-              </thead>
-              <tbody class="text-gray-700">
-                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">177</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">2</td><td class="px-4 py-3 border-b text-center">RT 002</td><td class="px-4 py-3 border-b text-center">128</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">3</td><td class="px-4 py-3 border-b text-center">RT 003</td><td class="px-4 py-3 border-b text-center">195</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">500</td></tr>
-              </tbody>
-          </table>
-      </div>
+        <h3 class="text-xl font-semibold text-center py-4">RW 001</h3>
+        <table class="min-w-full text-sm">
+            <thead class="bg-gray-100">
+                <tr class="text-center">
+                    <th class="px-4 py-2">No</th>
+                    <th class="px-4 py-2">RT</th>
+                    <th class="px-4 py-2">Jumlah Penduduk</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-700">
+                <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">177</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">2</td><td class="px-4 py-3 border-b text-center">RT 002</td><td class="px-4 py-3 border-b text-center">128</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">3</td><td class="px-4 py-3 border-b text-center">RT 003</td><td class="px-4 py-3 border-b text-center">195</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">4</td><td class="px-4 py-3 border-b text-center">RT 004</td><td class="px-4 py-3 border-b text-center">0</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">500</td></tr>
+            </tbody>
+        </table>
+    </div>
   
-      <div class="bg-white border border-gray-300 rounded-lg shadow-md w-full flex flex-col justify-center items-center">
-          <h3 class="text-xl font-semibold text-center py-4">RW 002</h3>
-          <table class="min-w-full text-sm">
-              <thead class="bg-gray-100">
-                  <tr class="text-center">
-                      <th class="px-4 py-2">No</th>
-                      <th class="px-4 py-2">RT</th>
-                      <th class="px-4 py-2">Jumlah Penduduk</th>
-                  </tr>
-              </thead>
-              <tbody class="text-gray-700">
-                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">187</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">2</td><td class="px-4 py-3 border-b text-center">RT 002</td><td class="px-4 py-3 border-b text-center">87</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">3</td><td class="px-4 py-3 border-b text-center">RT 003</td><td class="px-4 py-3 border-b text-center">121</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">395</td></tr>
-              </tbody>
-          </table>
-      </div>
+    <div class="bg-white border border-gray-300 rounded-lg shadow-md w-full flex flex-col justify-center items-center">
+        <h3 class="text-xl font-semibold text-center py-4">RW 002</h3>
+        <table class="min-w-full text-sm">
+            <thead class="bg-gray-100">
+                <tr class="text-center">
+                    <th class="px-4 py-2">No</th>
+                    <th class="px-4 py-2">RT</th>
+                    <th class="px-4 py-2">Jumlah Penduduk</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-700">
+                <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">187</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">2</td><td class="px-4 py-3 border-b text-center">RT 002</td><td class="px-4 py-3 border-b text-center">87</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">3</td><td class="px-4 py-3 border-b text-center">RT 003</td><td class="px-4 py-3 border-b text-center">121</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">4</td><td class="px-4 py-3 border-b text-center">RT 004</td><td class="px-4 py-3 border-b text-center">0</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">395</td></tr>
+            </tbody>
+        </table>
+    </div>
+
   
       <div class="bg-white border border-gray-300 rounded-lg shadow-md w-full flex flex-col justify-center items-center">
           <h3 class="text-xl font-semibold text-center py-4">RW 003</h3>
@@ -150,45 +153,47 @@
       </div>
   
       <div class="bg-white border border-gray-300 rounded-lg shadow-md w-full flex flex-col justify-center items-center">
-          <h3 class="text-xl font-semibold text-center py-4">RW 004</h3>
-          <table class="min-w-full text-sm">
-              <thead class="bg-gray-100">
-                  <tr class="text-center">
-                      <th class="px-4 py-2">No</th>
-                      <th class="px-4 py-2">RT</th>
-                      <th class="px-4 py-2">Jumlah Penduduk</th>
-                  </tr>
-              </thead>
-              <tbody class="text-gray-700">
-                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">153</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">2</td><td class="px-4 py-3 border-b text-center">RT 002</td><td class="px-4 py-3 border-b text-center">100</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">3</td><td class="px-4 py-3 border-b text-center">132</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">385</td></tr>
-              </tbody>
-          </table>
-      </div>
+        <h3 class="text-xl font-semibold text-center py-4">RW 004</h3>
+        <table class="min-w-full text-sm">
+            <thead class="bg-gray-100">
+                <tr class="text-center">
+                    <th class="px-4 py-2">No</th>
+                    <th class="px-4 py-2">RT</th>
+                    <th class="px-4 py-2">Jumlah Penduduk</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-700">
+                <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">153</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">2</td><td class="px-4 py-3 border-b text-center">RT 002</td><td class="px-4 py-3 border-b text-center">100</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">3</td><td class="px-4 py-3 border-b text-center">RT 003</td><td class="px-4 py-3 border-b text-center">132</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">4</td><td class="px-4 py-3 border-b text-center">RT 004</td><td class="px-4 py-3 border-b text-center">0</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">385</td></tr>
+            </tbody>
+        </table>
+    </div>
   
-      <!-- Baris kedua (RW 5 - RW 8) -->
-      <div class="bg-white border border-gray-300 rounded-lg shadow-md w-full flex flex-col justify-center items-center">
-          <h3 class="text-xl font-semibold text-center py-4">RW 005</h3>
-          <table class="min-w-full text-sm">
-              <thead class="bg-gray-100">
-                  <tr class="text-center">
-                      <th class="px-4 py-2">No</th>
-                      <th class="px-4 py-2">RT</th>
-                      <th class="px-4 py-2">Jumlah Penduduk</th>
-                  </tr>
-              </thead>
-              <tbody class="text-gray-700">
-                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">105</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">2</td><td class="px-4 py-3 border-b text-center">157</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">3</td><td class="px-4 py-3 border-b text-center">102</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">365</td></tr>
-              </tbody>
-          </table>
-      </div>
+    <div class="bg-white border border-gray-300 rounded-lg shadow-md w-full flex flex-col justify-center items-center">
+        <h3 class="text-xl font-semibold text-center py-4 -mt-32">RW 005</h3>
+        <table class="min-w-full text-sm">
+            <thead class="bg-gray-100">
+                <tr class="text-center">
+                    <th class="px-4 py-2">No</th>
+                    <th class="px-4 py-2">RT</th>
+                    <th class="px-4 py-2">Jumlah Penduduk</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-700">
+                <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">105</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">2</td><td class="px-4 py-3 border-b text-center">RT 002</td><td class="px-4 py-3 border-b text-center">157</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">3</td><td class="px-4 py-3 border-b text-center">RT 003</td><td class="px-4 py-3 border-b text-center">102</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">364</td></tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+    
   
-      <!-- RW 6 - RW 8 -->
       <div class="bg-white border border-gray-300 rounded-lg shadow-md w-full flex flex-col justify-center items-center">
           <h3 class="text-xl font-semibold text-center py-4">RW 006</h3>
           <table class="min-w-full text-sm">
@@ -200,10 +205,12 @@
                   </tr>
               </thead>
               <tbody class="text-gray-700">
-                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">120</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">2</td><td class="px-4 py-3 border-b text-center">130</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">3</td><td class="px-4 py-3 border-b text-center">150</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">400</td></tr>
+                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">173</td></tr>
+                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 002</td><td class="px-4 py-3 border-b text-center">173</td></tr>
+                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 003</td><td class="px-4 py-3 border-b text-center">127</td></tr>
+                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 004</td><td class="px-4 py-3 border-b text-center">145</td></tr>
+                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 005</td><td class="px-4 py-3 border-b text-center">64</td></tr>
+                  <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">682</td></tr>
               </tbody>
           </table>
       </div>
@@ -219,32 +226,35 @@
                   </tr>
               </thead>
               <tbody class="text-gray-700">
-                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">110</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">2</td><td class="px-4 py-3 border-b text-center">125</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">3</td><td class="px-4 py-3 border-b text-center">135</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">370</td></tr>
+                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">171</td></tr>
+                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 002</td><td class="px-4 py-3 border-b text-center">102</td></tr>
+                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 003</td><td class="px-4 py-3 border-b text-center">151</td></tr>
+                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 004</td><td class="px-4 py-3 border-b text-center">177</td></tr>
+                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 005</td><td class="px-4 py-3 border-b text-center">148</td></tr>
+                  <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">749</td></tr>
               </tbody>
           </table>
       </div>
   
       <div class="bg-white border border-gray-300 rounded-lg shadow-md w-full flex flex-col justify-center items-center">
-          <h3 class="text-xl font-semibold text-center py-4">RW 008</h3>
-          <table class="min-w-full text-sm">
-              <thead class="bg-gray-100">
-                  <tr class="text-center">
-                      <th class="px-4 py-2">No</th>
-                      <th class="px-4 py-2">RT</th>
-                      <th class="px-4 py-2">Jumlah Penduduk</th>
-                  </tr>
-              </thead>
-              <tbody class="text-gray-700">
-                  <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">145</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">2</td><td class="px-4 py-3 border-b text-center">140</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center">3</td><td class="px-4 py-3 border-b text-center">155</td></tr>
-                  <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">440</td></tr>
-              </tbody>
-          </table>
-      </div>
+        <h3 class="text-xl font-semibold text-center py-4 -mt-16">RW 008</h3>
+        <table class="min-w-full text-sm">
+            <thead class="bg-gray-100">
+                <tr class="text-center">
+                    <th class="px-4 py-2">No</th>
+                    <th class="px-4 py-2">RT</th>
+                    <th class="px-4 py-2">Jumlah Penduduk</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-700">
+                <tr><td class="px-4 py-3 border-b text-center">1</td><td class="px-4 py-3 border-b text-center">RT 001</td><td class="px-4 py-3 border-b text-center">173</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">2</td><td class="px-4 py-3 border-b text-center">RT 002</td><td class="px-4 py-3 border-b text-center">173</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">3</td><td class="px-4 py-3 border-b text-center">RT 003</td><td class="px-4 py-3 border-b text-center">127</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center">4</td><td class="px-4 py-3 border-b text-center">RT 005</td><td class="px-4 py-3 border-b text-center">64</td></tr>
+                <tr><td class="px-4 py-3 border-b text-center font-bold">Jumlah</td><td class="px-4 py-3 border-b text-center" colspan="2">682</td></tr>
+            </tbody>
+        </table>
+    </div>
   </div>
   
   

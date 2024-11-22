@@ -147,10 +147,16 @@ Grumbul Tlaga</pre>
             @endforeach
      
         </div>
+        
       </div>
-      <a href="/berita" class="flex justify-center w-15 mt-5 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">
-        Lihat Selengkapnya
-    </a>
+      
+      </div>
+      <div class="flex justify-center">
+        <a href="/berita" 
+          class="mt-5 px-6 py-2 bg-blue-600 text-white font-medium text-sm rounded-full shadow-lg hover:bg-blue-700 hover:shadow-xl transform hover:scale-105 transition duration-300">
+          Lihat Lainnya</a>
+      </div>
+      
    </section>
   </div>
 

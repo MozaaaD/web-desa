@@ -15,7 +15,7 @@ class IndexController extends Controller
         return view('index', compact('posts'));
     }
     public function berita(){
-        $posts = Index::all();
+        $posts = Berita::latest()->get();
         return view('berita', compact('posts'));
     }
     public function dashboard(){
@@ -49,5 +49,13 @@ class IndexController extends Controller
     public function rtrw(){
         $posts = Index::all();
         return view('rtrw', compact('posts'));
+    }
+    public function produkdesa(){
+        $posts = Index::all();
+        return view('produkdesa', compact('posts'));
+    }
+    public function potensiwisata(){
+        $posts = Index::all();
+        return view('potensiwisata', compact('posts'));
     }
 }

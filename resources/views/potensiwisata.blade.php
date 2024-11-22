@@ -8,10 +8,10 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
-    <title>Karang Taruna</title>
+    <title>Potensi Wisata</title>
 </head>
 <body>
-    <nav class="bg-white h-24 px-16 flex items-center text-black z-10 w-full">
+    <nav class="bg-white h-24 px-16 flex items-center fixed top-0 text-black z-10 w-full">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex gap-3 items-center">
                 <img src="/logobms.png" class="w-16 h-auto" alt="">
@@ -79,13 +79,26 @@
     </nav>
 
     <div class="container mx-auto py-12 px-6 mt-5">
-        <h2 class="text-3xl font-bold text-yellow-600 mb-4 ml-9">Karang Taruna</h2>
-        <p class="text-lg text-gray-600 leading-relaxed mb-36 pl-8 border-l-4 border-yellow-600">
-          Karang Taruna adalah organisasi kepemudaan di tingkat desa yang bertujuan untuk mengembangkan potensi pemuda dan pemudi dalam rangka meningkatkan kesejahteraan sosial masyarakat. Karang Taruna Desa Tlaga bergerak di bidang sosial, budaya, ekonomi, dan lingkungan, serta berfungsi sebagai wadah pengembangan generasi muda agar dapat berperan aktif dalam pembangunan masyarakat.
-        </p>
+      <div class="container mx-auto py-12 px-6 mt-11">
+        <h2 class="text-3xl font-bold text-yellow-600 mb-4 ml-9">Potensi Wisata</h2>
     </div>
+          <div class="relative">
+          <img src="/potensidesa.jpg" alt="Potensi Wisata" class="w-full h-96 object-cover rounded-lg shadow-lg">
+          <div class="absolute inset-0 bg-black opacity-30 rounded-lg"></div>
+      </div>
+  
+      <!-- Title and Description -->
+      <div class="mt-6">
+          <p class="text-2xl font-semibold text-gray-800 mb-4">WANAWISATA ALAS KALIUNG</p>
+  
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Wisata terbaru di Desa Tlaga yang saat ini sedang ramai di sosial media merupakan wisata baru yang sedang dirintis oleh karang taruna RW 1 Desa Tlaga. Nama wisata tersebut adalah Wana Wisata Alas Kaliung, terletak di lokasi perhutani RW 1 Desa Tlaga Kecamatan Gumelar Kabupaten Banyumas. Wisata hutan yang sejuk sangat cocok untuk bersantai dengan keluarga maupun dengan rekan kerja. Wanna Wisata alas kaliung memiliki spot menarik untuk berfoto-foto. Dengan biaya masuk Rp 5.000 per orang anda bisa menikmati keindahan alam wisata alas kaling, diatas ada Rumah Pohon, dan area/track trabas yang diminati oleh pecita trail, kemudian jika berjalan samapai ke puncak/bukit sempu, ada menara pandang setinggi kurang lebih 10 meter, disana kita bisa melihat keindahan alam kecamatan Gumelar dari ketinggian puncak sempu. Wana Wisata alas kaliung juga memiliki lokasi untuk camping untuk kegiatan Pramuka, keluarga, atau acara lain.</p>
 
-    
+            Ayo berkunjung ke Alas Kaliung, ajak keluarga, teman, atau rekan kerja.
+
+      </div>
+  </div>
+  
     
     <footer class="bg-gray-200 py-8 px-4 shadow-md z-10 flex justify-center items-center dark:bg-slate-900 dark:text-white mt-5">
         <div class="text-sm text-gray-600 dark:text-gray-300 text-center">

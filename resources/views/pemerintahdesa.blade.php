@@ -79,7 +79,7 @@
     </nav>
 
     <div class="container mx-auto py-12 px-6 mt-20">
-        <h2 class="text-3xl font-bold text-yellow-600 mb-4">Pemerintah Desa</h2>
+        <h2 class="text-3xl font-bold text-yellow-600 mb-4 ml-9">Pemerintah Desa</h2>
         <p class="text-lg text-gray-600 leading-relaxed mb-6 pl-8 border-l-4 border-yellow-600">
             Pemerintah desa adalah unit pemerintahan terkecil dalam struktur administratif di Indonesia. Tugas utama dari pemerintah desa adalah melayani dan memberdayakan masyarakat desa, mengelola sumber daya lokal, dan menerapkan kebijakan-kebijakan yang sesuai dengan kebutuhan dan aspirasi warga desa. Pemerintah desa memiliki peran penting dalam pengembangan desa, termasuk dalam hal pembangunan infrastruktur, kesehatan, pendidikan, dan pemberdayaan ekonomi masyarakat.
         </p>
